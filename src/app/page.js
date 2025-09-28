@@ -81,9 +81,9 @@ export default function Home() {
         <div className="container mx-auto px-4 text-center">
           <h1 className="text-4xl md:text-5xl font-bold mb-6">Your Trusted Partner in Shipping &amp; Logistics</h1>
           <p className="text-xl mb-8">Efficient, Reliable, and Cost-Effective Solutions</p>
-          <a href="#contact" className="bg-white text-zinc-900 px-8 py-3 rounded-full font-bold hover:bg-blue-100 transition duration-300">
+          <button   onClick={() => router.push('/contact-us')}  className="bg-white text-zinc-900 px-8 py-3 rounded-full font-bold hover:bg-blue-100 transition duration-300">
             Get in Touch
-          </a>
+          </button>
         </div>
       </section>
 
@@ -171,7 +171,7 @@ export default function Home() {
           <p>&copy; {new Date().getFullYear()} SSSR Overseas. All rights reserved.</p>
         </div>
       </footer> */}
-      {/* <Footer /> */}
+      <Footer />
 
     </div>
   );
